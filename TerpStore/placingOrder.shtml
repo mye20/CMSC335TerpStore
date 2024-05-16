@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Placing Order</title>
+    <!-- The next line connects this file with the style sheet -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="whiteBorder">
+        <div class="greenBorder">
+            <h1 id="terpStore">Placing Order</h1>
+
+            <form action="processing/placingOrder.php" method="post">
+                <label>Item Serial #</label>
+                <input type="tel" name="serialNumber" required autofocus placeholder="umd-item-0000"><br>
+
+                <label >Credit Card #</label>
+                <input class="creditCard" type="text" name="cc1" maxlength="4" required> -
+                <input class="creditCard" type="text" name="cc2" maxlength="4" required> -
+                <input class="creditCard" type="text" name="cc3" maxlength="4" required> -
+                <input class="creditCard" type="text" name="cc4" maxlength="4" required><br>
+                
+                <label>Shipping Address</label>
+                <input type="text" name="shipping" maxlength="80" required><br>
+
+                <label>Contact Email Address</label>
+                <input type="email" name="email" placeholder="example@terpmail.umd.edu"><br><br>
+                 
+                <input type="submit" value="Submit Inquiry">
+                <input type="reset" value="Clear">
+            </form>
+            <div class="footerBorder">
+                <!--#include virtual="footer.shtml" -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
